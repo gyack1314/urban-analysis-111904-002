@@ -42,8 +42,8 @@
     },
     {
       "path": "projects.parquet",
-      "bytes": 6611,
-      "sha256": "b0204dd10ca2de540078486bfcecdf830a75e18de1be7eac58a1b061dee89054",
+      "bytes": 7502,
+      "sha256": "46ebd414c8fc3897c41f72e62e4cf49dd8ab253a7dbf8d60bd4d105acf55add9",
       "rows": 3
     },
     {
@@ -54,8 +54,8 @@
     },
     {
       "path": "seed.json",
-      "bytes": 165346,
-      "sha256": "ec1c0b148df39ec038355ad60c59e00a058861459db20fb2e308f554f7db03ff"
+      "bytes": 165552,
+      "sha256": "1c70d53b1593d8224cd9ac8d79cd38a4708c625a0b242edb673a96f192af237b"
     },
     {
       "path": "services.parquet",

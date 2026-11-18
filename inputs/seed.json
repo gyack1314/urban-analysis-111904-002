@@ -6657,7 +6657,7 @@
         "edge": "new-lift",
         "source": "N1",
         "target": "N4",
-        "length_m": 5,
+        "length_m": 18,
         "slope": 0,
         "steps": 0,
         "width_m": 1.3,
@@ -6668,7 +6668,9 @@
       "closed_edges": [
         "e4"
       ],
-      "construction_days": 20
+      "construction_days": 20,
+      "new_capacity": null,
+      "service_capacity_target": null
     },
     {
       "project": "P2",
@@ -6688,7 +6690,9 @@
       "closed_edges": [
         "e7"
       ],
-      "construction_days": 10
+      "construction_days": 10,
+      "new_capacity": 45,
+      "service_capacity_target": "S1"
     },
     {
       "project": "P3",
@@ -6700,7 +6704,9 @@
         "e5",
         "e5r"
       ],
-      "construction_days": 25
+      "construction_days": 25,
+      "new_capacity": null,
+      "service_capacity_target": null
     }
   ]
 }
