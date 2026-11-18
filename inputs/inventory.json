@@ -1,0 +1,73 @@
+{
+  "files": [
+    {
+      "path": "actions.json",
+      "bytes": 149,
+      "sha256": "36e9ee93da7962b5c9ef5c2f3e5bbe7da084c4e558988a3ca51d0d57e5cba25c"
+    },
+    {
+      "path": "lift_windows.parquet",
+      "bytes": 1736,
+      "sha256": "8771f8b7ed10812459da5cdf88fe5a7c900fc88ed68f30398122160b488f1856",
+      "rows": 2
+    },
+    {
+      "path": "network.parquet",
+      "bytes": 17672,
+      "sha256": "2f3573f56e3b26e57b4d0f7720b4f9f1dfb7ed9255c6e330a6123439567436cf",
+      "rows": 22
+    },
+    {
+      "path": "origins.parquet",
+      "bytes": 2312,
+      "sha256": "735e1a57a27847fcaf4702535b542051178a9bbca1185bda38cd233516f2b34b",
+      "rows": 3
+    },
+    {
+      "path": "outages.parquet",
+      "bytes": 1296,
+      "sha256": "3c3adf367964b2385b1d17c7a126aa6905d9753d67fde33984f71708216310ff",
+      "rows": 1
+    },
+    {
+      "path": "planning-context.json",
+      "bytes": 222,
+      "sha256": "5f62db470f18f33ad55fa8228faa390a8a880e568109e1dc15f488cf7b57f6b4"
+    },
+    {
+      "path": "profiles.parquet",
+      "bytes": 2121,
+      "sha256": "1ead1954af00299dd87d352804035e107c5d7b9237c7748ed50772f062979f4e",
+      "rows": 3
+    },
+    {
+      "path": "projects.parquet",
+      "bytes": 6611,
+      "sha256": "b0204dd10ca2de540078486bfcecdf830a75e18de1be7eac58a1b061dee89054",
+      "rows": 3
+    },
+    {
+      "path": "requests.parquet",
+      "bytes": 9182,
+      "sha256": "d3f3cd31e33b9bd3319e0247f0053a5dedf747d77caf08b9e5c7d96d449c38f5",
+      "rows": 9
+    },
+    {
+      "path": "seed.json",
+      "bytes": 165346,
+      "sha256": "ec1c0b148df39ec038355ad60c59e00a058861459db20fb2e308f554f7db03ff"
+    },
+    {
+      "path": "services.parquet",
+      "bytes": 2654,
+      "sha256": "4f8b2db59ea3bcaa20d57b59ed035777f926da69476b5940746270bdbf25468a",
+      "rows": 3
+    },
+    {
+      "path": "traversals.parquet",
+      "bytes": 481762,
+      "sha256": "b6a98347dfab7b53d72eff274cf47039af1d78b86c4e4c36ec9fb1d513cd769c",
+      "rows": 780
+    }
+  ]
+}

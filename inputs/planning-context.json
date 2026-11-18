@@ -1,0 +1,10 @@
+{
+  "target_date": "2025-05-21",
+  "budget_yuan": 150000,
+  "service_unit": "persons per stated window",
+  "construction_departure_window": [
+    660,
+    720
+  ],
+  "profile_population_not_double_counted": true
+}
