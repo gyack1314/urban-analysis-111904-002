@@ -1,0 +1,241 @@
+{
+  "budget_yuan": 150000,
+  "baseline_served_nominal": 50.0,
+  "total_nominal_meal_demand": 90,
+  "meal_capacity_total_baseline": 50,
+  "structural_capacity_gap": 40,
+  "complementarity": {
+    "P1_only_served": 50.0,
+    "P2_only_served": 65.0,
+    "P2_only_gain_source": "仅来自 S1 窗口容量 30→45；new-link 起点 N4 无可达路径，新链路不生效",
+    "P1P2_combined_served": 65.0,
+    "combined_linkage_reliability_note": "组合后 N1→N4(new-lift,L2)→N4→S1(new-link) 贯通，轮椅群体可靠度才达到 1.0（见 route_evidence）",
+    "note": "P1 只到 N4、P2 只从 N4 出发；单独实施均不产生到 S1 的新路径，组合才贯通"
+  },
+  "crowding_out": [
+    {
+      "demand_scenario": "nominal|exit-R1",
+      "profile": "walking",
+      "baseline_served": 10.0,
+      "combo_served": 5.0,
+      "displaced": 5.0
+    }
+  ],
+  "portfolio_view": [
+    {
+      "state": "baseline",
+      "cost_yuan": 0.0,
+      "within_budget": true,
+      "nominal_served": 50.0,
+      "delta_vs_baseline": 0.0,
+      "cost_per_added_served_yuan": null
+    },
+    {
+      "state": "P1_completion",
+      "cost_yuan": 90000.0,
+      "within_budget": true,
+      "nominal_served": 50.0,
+      "delta_vs_baseline": 0.0,
+      "cost_per_added_served_yuan": null
+    },
+    {
+      "state": "P2_completion",
+      "cost_yuan": 50000.0,
+      "within_budget": true,
+      "nominal_served": 65.0,
+      "delta_vs_baseline": 15.0,
+      "cost_per_added_served_yuan": 3333.3
+    },
+    {
+      "state": "P3_completion",
+      "cost_yuan": 110000.0,
+      "within_budget": true,
+      "nominal_served": 50.0,
+      "delta_vs_baseline": 0.0,
+      "cost_per_added_served_yuan": null
+    },
+    {
+      "state": "P1P2_completion",
+      "cost_yuan": 140000.0,
+      "within_budget": true,
+      "nominal_served": 65.0,
+      "delta_vs_baseline": 15.0,
+      "cost_per_added_served_yuan": 9333.3
+    }
+  ],
+  "states": [
+    {
+      "state": "baseline",
+      "kind": "baseline",
+      "cost_yuan": 0.0,
+      "within_budget": true,
+      "construction_days": 0,
+      "nominal_served_persons": 50.0,
+      "delta_vs_baseline": 0.0,
+      "description": "基线：actions.json 的 L1 午间恢复生效，停运收缩为 660–720"
+    },
+    {
+      "state": "baseline_no_restore",
+      "kind": "sensitivity",
+      "cost_yuan": 0.0,
+      "within_budget": true,
+      "construction_days": 0,
+      "nominal_served_persons": 50.0,
+      "delta_vs_baseline": 0.0,
+      "description": "反事实：L1 恢复未兑现，停运维持 660–780"
+    },
+    {
+      "state": "lift_L1_failed",
+      "kind": "sensitivity",
+      "cost_yuan": 0.0,
+      "within_budget": true,
+      "construction_days": 0,
+      "nominal_served_persons": 50.0,
+      "delta_vs_baseline": 0.0,
+      "description": "极端：L1 整个开放窗口不可用（地图最短路径仍在但梯不可乘）"
+    },
+    {
+      "state": "P1_construction",
+      "kind": "construction",
+      "cost_yuan": 90000.0,
+      "within_budget": true,
+      "construction_days": 20,
+      "nominal_served_persons": 50.0,
+      "delta_vs_baseline": 0.0,
+      "description": "P1施工期：封闭 ['e4']，新增边尚未可用",
+      "construction_window_loss_persons": 0.0,
+      "construction_day_loss_estimate": 0.0,
+      "post_completion_gain_persons": 0.0,
+      "construction_reachable_delta": -5.0,
+      "construction_mean_reliability_baseline": 0.8889,
+      "construction_mean_reliability_state": 0.8333
+    },
+    {
+      "state": "P1_completion",
+      "kind": "completion",
+      "cost_yuan": 90000.0,
+      "within_budget": true,
+      "construction_days": 20,
+      "nominal_served_persons": 50.0,
+      "delta_vs_baseline": 0.0,
+      "description": "P1完工：封闭边恢复，新边/改善生效"
+    },
+    {
+      "state": "P2_construction",
+      "kind": "construction",
+      "cost_yuan": 50000.0,
+      "within_budget": true,
+      "construction_days": 10,
+      "nominal_served_persons": 20.0,
+      "delta_vs_baseline": -30.0,
+      "description": "P2施工期：封闭 ['e7']，新增边尚未可用",
+      "construction_window_loss_persons": 30.0,
+      "construction_day_loss_estimate": 300.0,
+      "post_completion_gain_persons": 15.0,
+      "construction_reachable_delta": -0.54,
+      "construction_mean_reliability_baseline": 0.8889,
+      "construction_mean_reliability_state": 0.8828
+    },
+    {
+      "state": "P2_completion",
+      "kind": "completion",
+      "cost_yuan": 50000.0,
+      "within_budget": true,
+      "construction_days": 10,
+      "nominal_served_persons": 65.0,
+      "delta_vs_baseline": 15.0,
+      "description": "P2完工：封闭边恢复，新边/改善生效，S1 窗口容量改为 45.0"
+    },
+    {
+      "state": "P3_construction",
+      "kind": "construction",
+      "cost_yuan": 110000.0,
+      "within_budget": true,
+      "construction_days": 25,
+      "nominal_served_persons": 50.0,
+      "delta_vs_baseline": 0.0,
+      "description": "P3施工期：封闭 ['e5' 'e5r']，新增边尚未可用",
+      "construction_window_loss_persons": 0.0,
+      "construction_day_loss_estimate": 0.0,
+      "post_completion_gain_persons": 0.0,
+      "construction_reachable_delta": -12.67,
+      "construction_mean_reliability_baseline": 0.8889,
+      "construction_mean_reliability_state": 0.7481
+    },
+    {
+      "state": "P3_completion",
+      "kind": "completion",
+      "cost_yuan": 110000.0,
+      "within_budget": true,
+      "construction_days": 25,
+      "nominal_served_persons": 50.0,
+      "delta_vs_baseline": 0.0,
+      "description": "P3完工：封闭边恢复，新边/改善生效"
+    },
+    {
+      "state": "P1P2_construction",
+      "kind": "construction",
+      "cost_yuan": 140000.0,
+      "within_budget": true,
+      "construction_days": 20,
+      "nominal_served_persons": 20.0,
+      "delta_vs_baseline": -30.0,
+      "description": "P1+P2 同期施工：e4、e7 封闭，新边均未可用",
+      "construction_window_loss_persons": 30.0,
+      "construction_day_loss_estimate": 600.0,
+      "post_completion_gain_persons": 15.0,
+      "construction_reachable_delta": -5.0,
+      "construction_mean_reliability_baseline": 0.8889,
+      "construction_mean_reliability_state": 0.8333
+    },
+    {
+      "state": "P1P2_completion",
+      "kind": "completion",
+      "cost_yuan": 140000.0,
+      "within_budget": true,
+      "construction_days": 20,
+      "nominal_served_persons": 65.0,
+      "delta_vs_baseline": 15.0,
+      "description": "P1+P2 完工：N1→N4→S1 贯通（两项目单独都不成立），S1 容量 45"
+    },
+    {
+      "state": "P1P2_construction_closeboth",
+      "kind": "construction",
+      "cost_yuan": 140000.0,
+      "within_budget": true,
+      "construction_days": 20,
+      "nominal_served_persons": 20.0,
+      "delta_vs_baseline": -30.0,
+      "description": "敏感性：施工封闭按双向理解（e4 同时封 e4r、e7 同时封 e7r）",
+      "construction_window_loss_persons": 30.0,
+      "construction_day_loss_estimate": 600.0,
+      "post_completion_gain_persons": 15.0,
+      "construction_reachable_delta": -5.0,
+      "construction_mean_reliability_baseline": 0.8889,
+      "construction_mean_reliability_state": 0.8333
+    },
+    {
+      "state": "P3_completion_bothdir",
+      "kind": "sensitivity",
+      "cost_yuan": 110000.0,
+      "within_budget": true,
+      "construction_days": 25,
+      "nominal_served_persons": 50.0,
+      "delta_vs_baseline": 0.0,
+      "description": "敏感性：P3 坡度改善同时作用于 e5 与 e5r（契约字面只作用 e5）"
+    }
+  ],
+  "assumptions": {
+    "slope_downhill": "契约只规定上坡正值按 max_slope 限制；下坡按同一绝对值阈值作安全假设处理。",
+    "censored": "observation_end 为右删失下界，不并入完成用时均值；若其值超过拟合 p90 则加宽保守端。",
+    "turned_back": "turned_back 记录作为该边对该群体不可独立完成的证据，用时不参与完成分布拟合。",
+    "unobserved_edge": "无观测边不按零分钟处理：优先反向同段转移，其次速度模型外推，均失败时给保守先验带并标记。",
+    "new_edge": "新建边无实测：梯边类比 e4 轿厢用时，普通边用速度模型外推，全部标记为假设值。",
+    "lift_queue": "电梯先到先服务，按 capacity/cycle_seconds 排队；停运时段到达需等待恢复，超过窗口或时限即失败。",
+    "exit": "住宅出口在情景层固定（R1 的两个可能出口分别成情景），不为单栋楼挑选最有利出口。",
+    "population": "origins 人数区间按共同情景缩放各 profile 请求人数，所有项目情景使用同一套人口与出口参数。",
+    "construction_window_field": "planning-context 的 construction_departure_window=2 契约未定义语义，分析不使用其数值，仅登记。",
+    "return_trip": "requests 只描述出行窗口的单向需求；new_edge 为单向时，返程可用性在证据登记中提示，不虚构反向边。"
+  },
+  "re_run_note": "现场补测或 L1 恢复确认后，更新 inputs 原件并以同一脚本重跑即可重新比较；本分析不派单、不给出唯一必选项目。"
+}

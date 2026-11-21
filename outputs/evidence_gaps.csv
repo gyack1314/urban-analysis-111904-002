@@ -1,0 +1,110 @@
+﻿state,item,type,detail,n_completed
+baseline,e3|slow-walk,fallback,无完成观测（全部折返或删失）,0
+baseline,e3|wheelchair,fallback,无完成观测（全部折返或删失）,0
+baseline,e3r|slow-walk,fallback,无完成观测（全部折返或删失）,0
+baseline,e3r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+baseline,e5|wheelchair,fallback,无完成观测（全部折返或删失）,0
+baseline,e5r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+baseline,e11|wheelchair,reverse-analog,由反向同段 e11r 转移，已加宽不确定性,0
+baseline_no_restore,e3|slow-walk,fallback,无完成观测（全部折返或删失）,0
+baseline_no_restore,e3|wheelchair,fallback,无完成观测（全部折返或删失）,0
+baseline_no_restore,e3r|slow-walk,fallback,无完成观测（全部折返或删失）,0
+baseline_no_restore,e3r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+baseline_no_restore,e5|wheelchair,fallback,无完成观测（全部折返或删失）,0
+baseline_no_restore,e5r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+baseline_no_restore,e11|wheelchair,reverse-analog,由反向同段 e11r 转移，已加宽不确定性,0
+baseline_no_restore,scenario-assumption,assumption,L1恢复为已宣布动作，未兑现时本情景展示后果,0
+lift_L1_failed,e3|slow-walk,fallback,无完成观测（全部折返或删失）,0
+lift_L1_failed,e3|wheelchair,fallback,无完成观测（全部折返或删失）,0
+lift_L1_failed,e3r|slow-walk,fallback,无完成观测（全部折返或删失）,0
+lift_L1_failed,e3r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+lift_L1_failed,e5|wheelchair,fallback,无完成观测（全部折返或删失）,0
+lift_L1_failed,e5r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+lift_L1_failed,e11|wheelchair,reverse-analog,由反向同段 e11r 转移，已加宽不确定性,0
+lift_L1_failed,scenario-assumption,assumption,梯边 e4/e4r 全天移除，用于停运风险压力测试,0
+P1_construction,e3|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P1_construction,e3|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1_construction,e3r|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P1_construction,e3r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1_construction,e5|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1_construction,e5r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1_construction,e11|wheelchair,reverse-analog,由反向同段 e11r 转移，已加宽不确定性,0
+P1_construction,scenario-assumption,assumption,封闭边按契约字面单向执行：['e4'],0
+P1_completion,e3|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P1_completion,e3|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1_completion,e3r|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P1_completion,e3r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1_completion,e5|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1_completion,e5r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1_completion,e11|wheelchair,reverse-analog,由反向同段 e11r 转移，已加宽不确定性,0
+P1_completion,new-lift|slow-walk,lift-analog,新建电梯边，类比 e4 轿厢用时（无实测）,0
+P1_completion,new-lift|walking,lift-analog,新建电梯边，类比 e4 轿厢用时（无实测）,0
+P1_completion,new-lift|wheelchair,lift-analog,新建电梯边，类比 e4 轿厢用时（无实测）,0
+P2_construction,e3|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P2_construction,e3|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P2_construction,e3r|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P2_construction,e3r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P2_construction,e5|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P2_construction,e5r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P2_construction,e11|wheelchair,reverse-analog,由反向同段 e11r 转移，已加宽不确定性,0
+P2_construction,scenario-assumption,assumption,封闭边按契约字面单向执行：['e7'],0
+P2_completion,e3|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P2_completion,e3|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P2_completion,e3r|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P2_completion,e3r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P2_completion,e5|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P2_completion,e5r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P2_completion,e11|wheelchair,reverse-analog,由反向同段 e11r 转移，已加宽不确定性,0
+P2_completion,new-link|slow-walk,speed-model,新建普通边无实测，按同群体速度外推并加宽预测带,0
+P2_completion,new-link|walking,speed-model,新建普通边无实测，按同群体速度外推并加宽预测带,0
+P2_completion,new-link|wheelchair,speed-model,新建普通边无实测，按同群体速度外推并加宽预测带,0
+P3_construction,e3|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P3_construction,e3|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P3_construction,e3r|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P3_construction,e3r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P3_construction,e11|wheelchair,reverse-analog,由反向同段 e11r 转移，已加宽不确定性,0
+P3_construction,scenario-assumption,assumption,封闭边按契约字面单向执行：['e5' 'e5r'],0
+P3_completion,e3|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P3_completion,e3|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P3_completion,e3r|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P3_completion,e3r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P3_completion,e5|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P3_completion,e5r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P3_completion,e11|wheelchair,reverse-analog,由反向同段 e11r 转移，已加宽不确定性,0
+P1P2_construction,e3|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P1P2_construction,e3|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1P2_construction,e3r|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P1P2_construction,e3r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1P2_construction,e5|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1P2_construction,e5r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1P2_construction,e11|wheelchair,reverse-analog,由反向同段 e11r 转移，已加宽不确定性,0
+P1P2_construction,scenario-assumption,assumption,同期施工假设，实际排期可能错开,0
+P1P2_completion,e3|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P1P2_completion,e3|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1P2_completion,e3r|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P1P2_completion,e3r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1P2_completion,e5|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1P2_completion,e5r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1P2_completion,e11|wheelchair,reverse-analog,由反向同段 e11r 转移，已加宽不确定性,0
+P1P2_completion,new-lift|slow-walk,lift-analog,新建电梯边，类比 e4 轿厢用时（无实测）,0
+P1P2_completion,new-lift|walking,lift-analog,新建电梯边，类比 e4 轿厢用时（无实测）,0
+P1P2_completion,new-lift|wheelchair,lift-analog,新建电梯边，类比 e4 轿厢用时（无实测）,0
+P1P2_completion,new-link|slow-walk,speed-model,新建普通边无实测，按同群体速度外推并加宽预测带,0
+P1P2_completion,new-link|walking,speed-model,新建普通边无实测，按同群体速度外推并加宽预测带,0
+P1P2_completion,new-link|wheelchair,speed-model,新建普通边无实测，按同群体速度外推并加宽预测带,0
+P1P2_construction_closeboth,e3|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P1P2_construction_closeboth,e3|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1P2_construction_closeboth,e3r|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P1P2_construction_closeboth,e3r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1P2_construction_closeboth,e5|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1P2_construction_closeboth,e5r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P1P2_construction_closeboth,e11|wheelchair,reverse-analog,由反向同段 e11r 转移，已加宽不确定性,0
+P1P2_construction_closeboth,scenario-assumption,assumption,契约 closed_edges 为单向列表，本情景仅作敏感性对照,0
+P3_completion_bothdir,e3|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P3_completion_bothdir,e3|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P3_completion_bothdir,e3r|slow-walk,fallback,无完成观测（全部折返或删失）,0
+P3_completion_bothdir,e3r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P3_completion_bothdir,e5|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P3_completion_bothdir,e5r|wheelchair,fallback,无完成观测（全部折返或删失）,0
+P3_completion_bothdir,e11|wheelchair,reverse-analog,由反向同段 e11r 转移，已加宽不确定性,0
+P3_completion_bothdir,scenario-assumption,assumption,宽度 1.1m 仍不满足轮椅 1.2m，故该敏感性不改变轮椅可达性,0
